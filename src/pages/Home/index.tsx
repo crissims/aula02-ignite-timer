@@ -28,7 +28,7 @@ export function Home() {
     resolver: zodResolver(newCycleFormValidationSchema),
     defaultValues: {
       task: '',
-      minutesAmount: 0,
+      MinutesAmount: 0,
     },
   })
 
@@ -66,7 +66,7 @@ export function Home() {
             step={5}
             min={5}
             max={60}
-            {...register('minutesAmount', { valueAsNumber: true })}
+            {...register('MinutesAmount', { valueAsNumber: true })}
           />
 
           <span>minutos.</span>
