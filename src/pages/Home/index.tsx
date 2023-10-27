@@ -89,7 +89,3 @@ export function Home() {
     </HomeContainer>
   )
 }
-
-// farmar selo
-// o farm é o farm
-// issue accepting
