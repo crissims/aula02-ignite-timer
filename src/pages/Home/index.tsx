@@ -59,6 +59,8 @@ export function Home() {
 
   const activeCycle = cycles.find((cycle) => (cycle.id = activeCycleId))
 
+  console.log(activeCycle)
+
   const task = watch('task')
   const isSubmitDisabled = !task
 
