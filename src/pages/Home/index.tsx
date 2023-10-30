@@ -48,7 +48,7 @@ export function Home() {
       minutesAmount: data.MinutesAmount,
     }
 
-    setCycles([...cycles, newCycle])
+    setCycles((state) => [...state, newCycle])
 
     reset()
   }
