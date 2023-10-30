@@ -43,13 +43,16 @@ export function Home() {
   })
 
   function handleCreateNewCycle(data: NewCycleFormData) {
+    const id = String(new Date().getTime())
+
     const newCycle: Cycle = {
-      id: String(new Date().getTime()),
+      id,
       task: data.task,
       minutesAmount: data.MinutesAmount,
     }
 
     setCycles((state) => [...state, newCycle])
+    setActiveCycleId(id)
 
     reset()
   }
