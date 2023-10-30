@@ -48,6 +48,8 @@ export function Home() {
       minutesAmount: data.MinutesAmount,
     }
 
+    setCycles([...cycles, newCycle])
+
     reset()
   }
 
