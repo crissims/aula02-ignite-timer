@@ -58,7 +58,7 @@ export function Home() {
     reset()
   }
 
-  const activeCycle = cycles.find((cycle) => (cycle.id = activeCycleId))
+  const activeCycle = cycles.find((cycle) => cycle.id === activeCycleId)
 
   const totalSeconds = activeCycle ? activeCycle.minutesAmount * 60 : 0
   const currentSeconds = activeCycle ? totalSeconds - amountSecondsPassed : 0
@@ -107,7 +107,7 @@ export function Home() {
 
         <CountdownContainer>
           <span>{minutes[0]}</span>
-          <span>{seconds[1]}</span>
+          <span>{minutes[1]}</span>
           <Separator>:</Separator>
           <span>{seconds[0]}</span>
           <span>{seconds[1]}</span>
