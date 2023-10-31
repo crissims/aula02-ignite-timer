@@ -59,7 +59,7 @@ export function Home() {
 
   const activeCycle = cycles.find((cycle) => (cycle.id = activeCycleId))
 
-  console.log(activeCycle)
+  const totalSeconds = activeCycle ? activeCycle.minutesAmount * 60 : 0
 
   const task = watch('task')
   const isSubmitDisabled = !task
