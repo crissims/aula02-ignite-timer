@@ -63,7 +63,7 @@ export function Home() {
   const totalSeconds = activeCycle ? activeCycle.minutesAmount * 60 : 0
   const currentSeconds = activeCycle ? totalSeconds - amountSecondsPassed : 0
 
-  const minutesAmount = currentSeconds / 60
+  const minutesAmount = Math.floor(currentSeconds / 60)
 
   const task = watch('task')
   const isSubmitDisabled = !task
