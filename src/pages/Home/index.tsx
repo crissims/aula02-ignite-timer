@@ -66,6 +66,9 @@ export function Home() {
   const minutesAmount = Math.floor(currentSeconds / 60)
   const secondsAmount = currentSeconds % 60
 
+  const minutes = String(minutesAmount).padStart(2, '0')
+  const seconds = String(secondsAmount).padStart(2, '0')
+
   const task = watch('task')
   const isSubmitDisabled = !task
 
